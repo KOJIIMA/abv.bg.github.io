@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://bimg.abv.bg/a/r.html?p=12 -->
+<html lang="bg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>АБВ Поща</title><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="description" content="АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена."><link href="https://img.abv.bg/favicon.ico" rel="shortcut icon"><style type="text/css">* { margin: 0; padding: 0 }
+
+		body,
+		html {
+			background: transparent;
+			height: 100%;
+			overflow: hidden;
+			text-align: center;
+			font: 14px Arial;
+		}
+
+		h1 {
+			font-size: 18px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		h1, h2, p {
+			margin: 0 0 15px;
+		}
+
+		div[id^="div-gpt-ad-"]>div.w2g {
+			margin: 0 !important;
+		}
+
+		#siteContent {
+			min-height: calc(100vh - 295px);
+		}
+
+		.abv-banner {
+			min-height: 600px;
+			width: 100%;
+			margin: 0 0 50px;
+		}
+
+		#wrapper {
+			background: transparent;
+		}</style><script type="text/javascript">(function (d, w) {
+
+			//console.log('ABV-r-v2.0');
+
+			var path = 'https://imgb.abv.bg/e/s/',
+				dom = getPropFromUrl('dom');
+
+			w.addEventListener('load', function () {
+				var p = getPropFromUrl('p'),
+					id = p !== '17' ? '177794' : '177795',
+					src = '//a.abv.bg/www/delivery/lg.php?bannerid=' + id + '&campaignid=5246&zoneid=63&tid=' + (new Date).getTime();
+
+				if (p !== '7') buildMyZ(p);
+				else {
+					buildMyZ(p);
+					buildMyZ('5');
+				}
+
+				(new Image).src = src;
+				//console.log( 'banner id: ', id, src );
+			});
+
+			function buildMyZ(p) {
+
+				//console.log( 'z parameter: ', p );
+				var ifr = d.createElement('iframe'),
+					time = (new Date).getTime(),
+					tp = '&time=' + time,
+					o = d.querySelector('.abv-banner');
+
+				ifr.setAttribute('scrolling', 'no');
+				ifr.setAttribute('loading', 'eager');
+				ifr.setAttribute('class', 'abv-z');
+				ifr.setAttribute('frameborder', '0');
+				// ifr.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation');
+				ifr.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-popups allow-forms');
+
+				switch (p) {
+					case '1':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=inbox&act=' + getPropFromUrl('act') + '&w=300' + 
+									(getPropFromUrl('custom') === '1'? '' : '&noskin=1') +
+									(getPropFromUrl('test') === '1'? '&test=1' : '');
+							width = '300';
+							height = '600';
+						}
+						break;
+					case '2':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=middle&act=' + getPropFromUrl('act') + 
+									(getPropFromUrl('custom') === '1'? '' : '&noskin=1') +
+									(getPropFromUrl('test') === '1'? '&test=1' : '');
+							width = '300';
+							height = '600';
+						}
+						break;
+					case '3':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=sent&act=' + getPropFromUrl('act');
+							width = '300';
+							height = '600';
+						}
+						break;
+					case '4':
+						with (ifr) {
+							/*src = 'https://as.adwise.bg/j/nmadwise.jsp?tid='
+								+ getPropFromUrl('tid') + '&target=' + getPropFromUrl('act'); */
+							src = path + 'r_dfp_adw2.html?w=300&act=' + getPropFromUrl('act');
+							width = '300';
+							height = '600';
+						}
+						break;
+					case '5':
+						with (ifr) {
+							src = path + 'dmp.html?tid=' + getPropFromUrl('tid');
+							width = '0';
+							height = '0';
+						}
+						break;
+					case '6':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=inbox&act=' + getPropFromUrl('act') + '&w=160' +
+									(getPropFromUrl('custom') === '1'? '' : '&noskin=1') +
+									(getPropFromUrl('test') === '1'? '&test=1' : '');
+							width = '160';
+							height = '600';
+						}
+						break;
+					case '7':
+						with (ifr) {
+							/* src = 'https://as.adwise.bg/j/nmadwise.jsp?tid='
+								+ getPropFromUrl('tid') + '&target=' + getPropFromUrl('act'); */
+							src = path + 'r_dfp_adw2.html?w=160&act=' + getPropFromUrl('act');
+							width = '160';
+							height = '600';
+						}
+						break;
+					case '8':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=mobile&act=' + getPropFromUrl('act');
+							width = '320';
+							height = '100';
+						}
+						break;
+					case '9':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=apps&act=' + getPropFromUrl('act');
+							width = '320';
+							height = '50';
+						}
+						break;
+					case '18':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=apps100&act=' + getPropFromUrl('act');
+							width = '320';
+							height = '100';
+						}
+						break;
+					case '10': // premium rectangle 300x250
+						with (ifr) {
+							src = /abvnew|localhost/g.test(dom)? '//imgb.abv.bg/e/s/r_dfp_home.html?pos=index&act=home' : path + 'r_gam.html?pos=index&act=home';
+							width = '300';
+							height = '250';
+						}
+						break;
+					case '11': // native ad 1x1
+						with (ifr) {
+							src = path + 'r_gam.html?pos=native&act=home';
+							width = '1';
+							height = '1';
+						}
+						break;
+                    case '112': // native ad 1x1
+						with (ifr) {
+							src = path + 'r_gam.html?pos=gong&act=home';
+							width = '1';
+							height = '1';
+						}
+						break;
+					case '12': // hidden ad 1x1
+						with (ifr) {
+							src = path + 'r_gam.html?pos=hidden&act=home';
+							width = '1';
+							height = '1';
+						}
+						break;
+					/*
+						Grabo 465x150 px
+					*/
+					case '14':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=grabo&act=r';
+							width = '465';
+							height = '150';
+						}
+						break;
+					case '15':
+						with (ifr) {
+							src = path + 'r_gam.html?pos=grabo&act=l';
+							width = '465';
+							height = '150';
+						}
+						break;
+					case '16':
+						with (ifr) {
+							src = path + 'z_dfp_home.html?key=abv_test';
+							width = '300';
+							height = '250';
+						}
+						break;
+					case '17':
+						with (ifr) {
+							src = path + 'r_dfp_dox.html?v=3';
+							width = '300';
+							height = '620';
+						}
+						break;
+				}
+
+				ifr.src += tp;
+				o.appendChild(ifr);
+			}
+
+			function getPropFromUrl(name) {
+				name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+				var regexS = "[\\?&]" + name + "=([^&#]*)";
+				var regex = new RegExp(regexS);
+				var results = regex.exec(decodeURIComponent(w.location.href));
+				if (results == null)
+					return '';
+				else
+					return results[1].toString();
+			}
+
+		})(document, window);</script></head><body><div class="abv-banner"><iframe scrolling="no" loading="eager" class="abv-z" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="./r_gam(1).html" width="1" height="1"></iframe></div><div id="wrapper"><h1>АБВ на твой домейн</h1><h2>Mаксималният размер за входящи писма в АБВ Поща.</h2><p>Максималният размер за входящо писмо, което потребител на АБВ Поща може да получи е 20 MB.</p><h2>SMPT</h2><p>SMTP (Simple Mail Transfer Protocol) е протокол за изпращане на електронна поща между сървъри. Повечето имейл системи, които изпращат поща, използват SMTP протокол, след което писмата могат да се изтеглят с POP3 или IMAP протокол от локален клиент/програма.</p><p>© 1999 -<script type="text/javascript">document.write((new Date).getFullYear());</script>2022Нет Инфо АД <a target="_blank" href="http://www.netinfocompany.bg/privacy">Всички права запазени.</a></p></div></body></html>

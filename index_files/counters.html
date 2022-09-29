@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://m.netinfo.bg/abv/counters.html -->
+<html lang="bg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>АБВ - Gemius</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://img.abv.bg/favicon.ico" rel="shortcut icon">
+
+<style>
+/* Elements */
+@media only screen and (min-width: 800px) {  }
+
+* { margin: 0; padding: 0; }
+
+body {
+  background: #fff;
+  font: 14px Arial, sans-serif;
+  color: #263238;
+}
+
+img { border: 0; }
+
+/* IDs */
+
+/* Classes */
+
+.x:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+*+html .x { display: inline-block; }
+* html .x { height: 0; }
+
+.fl { float: left; }
+.fr { float: right; }
+</style>
+
+</head>
+<body>
+
+<!-- (C)2000-2014 Gemius SA - gemiusAudience / m2.abv.bg / Home Page -->
+<script async="async" defer="defer" src="./xgemius.js.download"></script><script type="text/javascript">
+//var pp_gemius_identifier;
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_hit');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://gabg.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+</script>
+
+<script type="text/javascript">
+// console.log( 'Counters v.3.0' );
+window.addEventListener('message', receiveMessage, false);
+function receiveMessage(event)
+{
+  var origin = event.origin || event.originalEvent.origin, 
+      check = /abv\.bg|ni\.bg/gi.test( origin ) 
+              && /abv\.bg|ni\.bg/.test( document.referrer );
+  
+  if ( check && typeof event.data === 'string' && event.data.indexOf('#') > -1 ){ 
+    var arr = event.data.split('#');
+    eval( arr[0] + '("' + arr[1] + '");' );
+    console.log( 'gemius event: ', arr[1] );
+    top.window.postMessage({ event: 'pageloaded', id: arr[1] }, '*');    
+  }
+
+}
+</script>
+
+
+
+</body></html>
